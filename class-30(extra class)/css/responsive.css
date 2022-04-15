@@ -1,0 +1,24 @@
+@media (max-width:300px){
+    .sidebar{
+        margin-left: -250px;
+    }
+    .main_content{
+        width: 100%;
+    }
+    #menu_toggle{
+        left: 0;
+    }
+    .sidebar.active{
+        margin-left: 0;
+    }
+    #menu_toggle.active{
+        left: 250px;
+        background-color: #ff50a5;
+        box-shadow:  none;
+        border: #ff50a5;
+        transform: translateX(-100%);
+    }
+    #menu_toggle.active i::before{
+        content: '\f00d';
+    }
+}
